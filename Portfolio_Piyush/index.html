@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Piyush Kumar Bharati | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header glass">
+    <div class="header-inner">
+      <a class="brand" href="#">Piyush Kumar Bharati</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certificates</a>
+        <a href="#kolkata">Kolkata</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      <button class="theme-toggle" id="themeToggle">🌗</button>
+      <select id="sectionSearch" aria-label="Jump to section">
+        <option value="">Jump to section…</option>
+        <option value="about">About Me</option>
+        <option value="journey">My Journey</option>
+        <option value="projects">Projects</option>
+        <option value="certs">Certificates</option>
+        <option value="kolkata">Kolkata</option>
+        <option value="contact">Contact</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 id="typing"></h1>
+        <p class="lead">IIIT Sonepat’28 | Full-Stack Dev | Innovator | Dreamer</p>
+        <div class="hero-cta">
+          <a href="PiyushKumarBharati_12411035_Resume.pdf" class="btn" download>Download Resume</a>
+          <a href="#contact" class="btn ghost">Contact Me</a>
+        </div>
+      </div>
+      <div class="avatar">
+        <img src="Profile-picture.jpg" alt="Profile Avatar" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="section alt">
+    <h2>About Me</h2>
+    <div class="facts-grid">
+      <div class="fact-card">B.Tech CSE student<br /><span>IIIT Sonepat (2024-2028)</span></div>
+      <div class="fact-card">Sports Head & Prefect in school</div>
+      <div class="fact-card">Cricket & Karate medalist</div>
+      <div class="fact-card">Maths enthusiast & science lover</div>
+      <div class="fact-card">Passionate coder & problem solver</div>
+      <div class="fact-card">Always exploring new tech</div>
+    </div>
+    <div class="skills-tags">
+      <span>C++</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Java</span>
+      <span>HTML/CSS</span>
+      <span>SQL</span>
+      <span>DSA</span>
+      <span>Leadership</span>
+      <span>Teamwork</span>
+    </div>
+  </section>
+
+  <!-- Timeline of Journey -->
+  <section id="journey" class="section">
+    <h2>My Journey</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="year">2016-2022</span>
+        <strong>DPS North Kolkata / GD Goenka Dakshineswar</strong><br />
+        <span>10th: 94.6% | 12th: 91.8%<br />Class Monitor, Prefect, Sports Head</span>
+        <div class="details">
+          <ul>
+            <li>Led class and school with various leadership roles.</li>
+            <li>Excelled academically and in sports like cricket and karate.</li>
+            <li>Developed core values of teamwork and perseverance.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="year">2020-2024</span>
+        <strong>JEE Prep – FIITJEE</strong>
+        <span>97.65 Percentile | CSE at IIIT Sonepat</span>
+        <div class="details">
+          <ul>
+            <li>Focused and scored high percentile securing CSE branch at IIIT Sonepat.</li>
+            <li>Gained discipline and deep understanding of core subjects.</li>
+            <li>Prepared rigorously for premier engineering entrance exams.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="year">2024-2025</span>
+        <strong>IIIT Sonepat – 2 Years</strong>
+        <span>
+          CGPA: <span class="animated-count" data-count="9.165">0</span><br />
+          Project Development, Data Science, DSA, Backend learning
+        </span>
+        <div class="details">
+          <ul>
+            <li>Built multiple projects showcasing full software lifecycle.</li>
+            <li>Enhanced skills in algorithms, backend development, and data science.</li>
+            <li>Active participant in college events and leadership programs.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="year">Today</span>
+        <strong>Exploring Full-Stack & AI</strong>
+        <span>
+          Building, mentoring, growing.<br />
+          Interests: AI, Neural Networks, Deep Learning.
+        </span>
+        <div class="details">
+          <ul>
+            <li>Passionate about innovative technologies and real-world problem solving.</li>
+            <li>Pursuing growth in AI and full-stack software development.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section alt">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-tech="HTML, CSS, JS">
+        <h3>MNP Hotels</h3>
+        <p>End-to-End Booking Web App for IIIT Sonepat (<a href="https://piyushkumarbharati.github.io/Hotel-Management-Website/" target="_blank" rel="noopener">Live Demo</a>)</p>
+        <span class="badges">HTML | CSS | JS | Responsive | LocalStorage</span>
+      </div>
+      <div class="project-card" data-tech="HTML, CSS, JS">
+        <h3>Myntra Clone</h3>
+        <p>Functional front-end clone with filtering, cart, and mobile layout (<a href="https://piyushkumarbharati.github.io/Myntra-Clone/" target="_blank" rel="noopener">Live Demo</a>)</p>
+        <span class="badges">HTML | CSS | JS | React Concepts</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certs" class="section">
+    <h2>Certificates</h2>
+    <div class="cert-gallery">
+      <div class="cert-card">
+        <img src="html-certificate.png" alt="HTML Cert" onclick="showCertModal('html-certificate.png')">
+        <span>HTML Certification – KnowledgeGate</span>
+      </div>
+      <div class="cert-card">
+        <img src="css-certificate.png" alt="CSS Cert" onclick="showCertModal('css-certificate.png')">
+        <span>CSS Certification – KnowledgeGate</span>
+      </div>
+      <div class="cert-card">
+        <img src="Data-Visualisation-certificate.png" alt="Data Viz Cert" onclick="showCertModal('Data-Visualisation-certificate.png')">
+        <span>Data Visualization – Forage</span>
+      </div>
+    </div>
+    <!-- Certificate modal -->
+    <div id="certModal" class="modal" onclick="closeCertModal()">
+      <span class="close" onclick="closeCertModal()">&times;</span>
+      <img class="modal-content" id="certModalImg" />
+    </div>
+  </section>
+
+  <!-- Kolkata Section -->
+  <section id="kolkata" class="section alt">
+    <h2>Kolkata – My Hometown</h2>
+    <div class="kolkata-gallery">
+      <div class="gallery-card" data-desc="Howrah Bridge: Gateway to Kolkata, iconic over the Hooghly." data-link="https://en.wikipedia.org/wiki/Howrah_Bridge">
+        <img src="Howrah-Bridge.jpeg" alt="Howrah Bridge" />
+        <span>Howrah Bridge</span>
+      </div>
+      <div class="gallery-card" data-desc="Victoria Memorial: Marble grandeur & museums." data-link="https://en.wikipedia.org/wiki/Victoria_Memorial,_Kolkata">
+        <img src="Victoria-Memorial.jpeg" alt="Victoria Memorial" />
+        <span>Victoria Memorial</span>
+      </div>
+      <div class="gallery-card" data-desc="Street Food: Puchka, Kathi rolls, Mishti Doi." data-link="https://www.incredibleindia.gov.in/en/west-bengal/kolkata/food-guide-a-culinary-journey-through-kolkata-s-best-restaurantsby">
+        <img src="Best-street-food-in-Kolkata.webp" alt="Street Food" />
+        <span>Kolkata Food</span>
+      </div>
+      <div class="gallery-card" data-desc="Durga Puja: Artistic pandals, vibrant crowd." data-link="https://en.wikipedia.org/wiki/Durga_Puja">
+        <img src="Durga-puja.jpg" alt="Durga Puja" />
+        <span>Durga Puja</span>
+      </div>
+      <div class="gallery-card" data-desc="Eden Gardens: Legendary cricket stadium." data-link="https://en.wikipedia.org/wiki/Eden_Gardens">
+        <img src="Eden-Garden.jpeg" alt="Eden Gardens" />
+        <span>Eden Gardens</span>
+      </div>
+      <div class="gallery-card" data-desc="Trams: Nostalgic ride across the city." data-link="https://en.wikipedia.org/wiki/Trams_in_Kolkata">
+        <img src="Tram.jpeg" alt="Trams" />
+        <span>Kolkata Trams</span>
+      </div>
+    </div>
+    <div class="desc-box" id="kolkataDescBox"></div>
+
+    <div class="flaws-box">
+  <h3>Kolkata Flaws & Potential Solutions</h3>
+  <div class="flaws-grid">
+    <div class="flaw-card">
+      <div class="flaw-icon">🚯</div>
+      <div class="flaw-point"><b>Civic Sense & Cleanliness</b></div>
+      <div class="flaw-desc">Littering, spitting and neglect for public hygiene in many areas.</div>
+      <div class="flaw-solution"><b>Solution:</b> More dustbins, regular cleanliness drives, and awareness about personal responsibility.</div>
+    </div>
+    <div class="flaw-card">
+      <div class="flaw-icon">🔊</div>
+      <div class="flaw-point"><b>Noisy & Chaotic Streets</b></div>
+      <div class="flaw-desc">Frequent honking, street ruckus, and celebration noise disrupts peace.</div>
+      <div class="flaw-solution"><b>Solution:</b> Better traffic rules enforcement and community campaigns for mindful celebrations.</div>
+    </div>
+    <div class="flaw-card">
+      <div class="flaw-icon">🛣️</div>
+      <div class="flaw-point"><b>Potholes & Road Repairs</b></div>
+      <div class="flaw-desc">Roads develop potholes and get only seasonal repairs.</div>
+      <div class="flaw-solution"><b>Solution:</b> Invest in durable resurfacing and long-term maintenance plans, involve resident feedback.</div>
+    </div>
+    <div class="flaw-card">
+      <div class="flaw-icon">🌡️</div>
+      <div class="flaw-point"><b>Summer Heat & Humidity</b></div>
+      <div class="flaw-desc">Peak summer is hot and humid, making outdoors uncomfortable.</div>
+      <div class="flaw-solution"><b>Solution:</b> Expanding public shaded spaces, planting more trees, promoting hydration kiosks and cooling initiatives.</div>
+    </div>
+    <div class="flaw-card">
+      <div class="flaw-icon">🏛️</div>
+      <div class="flaw-point"><b>Damaging of Public Property</b></div>
+      <div class="flaw-desc">Vandalism of walls, seats, and art installations is too common.</div>
+      <div class="flaw-solution"><b>Solution:</b> Stricter fines, public art workshops, and civic pride programs to foster ownership.</div>
+    </div>
+  </div>
+  <div class="note">
+    <b>Every city has its quirks.</b> Kolkata remains soulful and vibrant, and by addressing these challenges together, its spirit can only grow!
+  </div>
+</div>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form class="contact-form" id="contactForm">
+      <label>Name:
+        <input type="text" name="name" required />
+      </label>
+      <label>Email:
+        <input type="email" name="email" required />
+      </label>
+      <label>Message:
+        <textarea name="message" required></textarea>
+      </label>
+      <div class="form-actions">
+        <button type="submit" class="btn">Send Message</button>
+      </div>
+    </form>
+    <div class="contact-info">
+      <a href="mailto:piyushkb28@gmail.com" target="_blank">piyushkb28@gmail.com</a>
+      <a href="https://in.linkedin.com/in/piyush-kumar-bharati-07044a31a" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/PiyushKumarBharati" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+  <button id="toTopBtn" title="Go to top">↑</button>
+
+  <footer class="site-footer">© <span id="year"></span> Piyush Kumar Bharati
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

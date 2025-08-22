@@ -200,44 +200,106 @@
     </div>
     <div class="desc-box" id="kolkataDescBox"></div>
 
-    <div class="flaws-box">
-  <h3>Kolkata Flaws & Potential Solutions</h3>
+   <section class="section alt flaws-box" id="kolkata-flaws">
+  <h2>Kolkata: Real-Life Flaws & Tech-Enabled Improvements</h2>
   <div class="flaws-grid">
+
+    <!-- Flaw 1 -->
     <div class="flaw-card">
-      <div class="flaw-icon">🚯</div>
-      <div class="flaw-point"><b>Civic Sense & Cleanliness</b></div>
-      <div class="flaw-desc">Littering, spitting and neglect for public hygiene in many areas.</div>
-      <div class="flaw-solution"><b>Solution:</b> More dustbins, regular cleanliness drives, and awareness about personal responsibility.</div>
+      <div class="flaw-icon">💼</div>
+      <div class="flaw-point">Unemployment & Underemployment</div>
+      <div class="flaw-desc">Despite being a cultural and educational hub, many Kolkata youth struggle to find quality jobs or relevant upskilling opportunities.</div>
+      <div class="flaw-solution">
+        <b>Tech-Enabled Solution:</b> AI-powered career portal. <br>
+        <i>How:</i> Scrape local job listings, analyze CVs using AI, recommend personalized courses, and allow users to track applications.
+      </div>
     </div>
+
+    <!-- Flaw 2 -->
     <div class="flaw-card">
-      <div class="flaw-icon">🔊</div>
-      <div class="flaw-point"><b>Noisy & Chaotic Streets</b></div>
-      <div class="flaw-desc">Frequent honking, street ruckus, and celebration noise disrupts peace.</div>
-      <div class="flaw-solution"><b>Solution:</b> Better traffic rules enforcement and community campaigns for mindful celebrations.</div>
+      <div class="flaw-icon">🌊</div>
+      <div class="flaw-point">Urban Flooding & Drainage Issues</div>
+      <div class="flaw-desc">Monsoon waterlogging regularly disrupts life and damages property.</div>
+      <div class="flaw-solution">
+        <b>Tech-Enabled Solution:</b> IoT flood alert & community reporting app.<br>
+        <i>How:</i> Users can report waterlogged areas on a map, which syncs with weather APIs and suggests safe routes in real time.
+      </div>
     </div>
+
+    <!-- Flaw 3 -->
     <div class="flaw-card">
-      <div class="flaw-icon">🛣️</div>
-      <div class="flaw-point"><b>Potholes & Road Repairs</b></div>
-      <div class="flaw-desc">Roads develop potholes and get only seasonal repairs.</div>
-      <div class="flaw-solution"><b>Solution:</b> Invest in durable resurfacing and long-term maintenance plans, involve resident feedback.</div>
+      <div class="flaw-icon">🏚️</div>
+      <div class="flaw-point">Slum Expansion & Urban Housing</div>
+      <div class="flaw-desc">Inequitable urbanization leads to the growth of slums and housing insecurity for many.</div>
+      <div class="flaw-solution">
+        <b>Tech-Enabled Solution:</b> Livelihood & e-governance platform.<br>
+        <i>How:</i> Provide easy online access to government schemes, documentation, and local micro-job connections via a Bengali/English mobile interface.
+      </div>
     </div>
+
+    <!-- Flaw 4 -->
     <div class="flaw-card">
-      <div class="flaw-icon">🌡️</div>
-      <div class="flaw-point"><b>Summer Heat & Humidity</b></div>
-      <div class="flaw-desc">Peak summer is hot and humid, making outdoors uncomfortable.</div>
-      <div class="flaw-solution"><b>Solution:</b> Expanding public shaded spaces, planting more trees, promoting hydration kiosks and cooling initiatives.</div>
+      <div class="flaw-icon">🌫️</div>
+      <div class="flaw-point">Pollution (Air & Water)</div>
+      <div class="flaw-desc">Pollution levels periodically reach unhealthy levels, especially in dense neighborhoods.</div>
+      <div class="flaw-solution">
+        <b>Tech-Enabled Solution:</b> Real-time pollution map & health advisories.<br>
+        <i>How:</i> Fetch sensor or open data, display pollution levels on an interactive map, and send health alerts based on user location.
+      </div>
     </div>
+
+    <!-- Flaw 5 -->
     <div class="flaw-card">
-      <div class="flaw-icon">🏛️</div>
-      <div class="flaw-point"><b>Damaging of Public Property</b></div>
-      <div class="flaw-desc">Vandalism of walls, seats, and art installations is too common.</div>
-      <div class="flaw-solution"><b>Solution:</b> Stricter fines, public art workshops, and civic pride programs to foster ownership.</div>
+      <div class="flaw-icon">🧠</div>
+      <div class="flaw-point">Mental Health & Social Isolation</div>
+      <div class="flaw-desc">Students and young professionals often face stress and isolation, especially after the pandemic.</div>
+      <div class="flaw-solution">
+        <b>Tech-Enabled Solution:</b> Digital peer support network.<br>
+        <i>How:</i> Enable chat-based support, mood tracking, and confidential access to therapists, with local resource mapping for affordable care.
+      </div>
     </div>
+
   </div>
   <div class="note">
-    <b>Every city has its quirks.</b> Kolkata remains soulful and vibrant, and by addressing these challenges together, its spirit can only grow!
+    *Every proposed improvement is designed for real impact and is feasible as a CS student project using modern web & AI technologies.
+  </div>
+</section>
+<!-- Modal for Flaw Details -->
+<div id="flawDetailModal">
+  <div class="flaw-modal-content">
+    <div class="flaw-modal-header">
+      <h3 id="flawModalTitle"></h3>
+      <button id="flawModalClose" aria-label="Close">×</button>
+    </div>
+
+    <div class="flaw-modal-body">
+      <div class="flaw-modal-section">
+        <h4>Overview</h4>
+        <p id="flawModalDesc"></p>
+        <!-- Optional: tags -->
+        <!--
+        <div class="flaw-tags">
+          <span class="flaw-tag">Kolkata</span>
+          <span class="flaw-tag">Civic</span>
+        </div>
+        -->
+      </div>
+
+      <div class="flaw-modal-section">
+        <h4>Implementation Details</h4>
+        <div id="flawModalHow"></div>
+        <div id="flawModalImages"></div>
+      </div>
+    </div>
   </div>
 </div>
+<!-- Image Viewer Modal -->
+<div id="imageViewerModal" class="modal">
+  <span id="imageViewerClose" class="close">&times;</span>
+  <img class="modal-content" id="imageViewerImg" alt="Flaw image" />
+</div>
+
+
 
 
   <!-- Contact Section -->
